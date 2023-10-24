@@ -1,14 +1,17 @@
 public interface Element {
-    static void print(){
+    static void print() {
 
     }
-    static void add(Element){
+
+    static void add() {
 
     }
-    static void remove(Element){
+
+    static void remove() {
 
     }
-    static int get(Element){
+
+    static int get() {
 
     }
 }
