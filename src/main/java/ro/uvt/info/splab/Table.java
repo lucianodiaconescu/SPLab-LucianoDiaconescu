@@ -1,8 +1,7 @@
+package ro.uvt.info.splab;
+
 public class Table implements Element{
     private String title;
-    private void print(){
-
-    }
 
     public Table(String title) {
         this.title = title;
@@ -17,9 +16,22 @@ public class Table implements Element{
     }
 
     @Override
-    public String toString() {
-        return "Table{" +
-                "title='" + title + '\'' +
-                '}';
+    public void add(Element e) {
+
+    }
+
+    @Override
+    public Element getElement() {
+        return Element.super.getElement();
+    }
+
+    @Override
+    public void remove(Element e) {
+
+    }
+
+    @Override
+    public void print() {
+
     }
 }

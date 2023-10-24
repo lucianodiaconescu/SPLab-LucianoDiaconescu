@@ -1,10 +1,12 @@
-public class Chapter {
+package ro.uvt.info.splab;
+
+public class SubChapter {
     private String name;
     private void print(){
 
     }
 
-    public Chapter(String name) {
+    public SubChapter(String name) {
         this.name = name;
     }
 
@@ -18,7 +20,7 @@ public class Chapter {
 
     @Override
     public String toString() {
-        return "Chapter{" +
+        return "ro.uvt.info.splab.SubChapter{" +
                 "name='" + name + '\'' +
                 '}';
     }
