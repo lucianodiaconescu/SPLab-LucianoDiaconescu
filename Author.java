@@ -1,11 +1,10 @@
-public class Author {
+public class Author extends Book{
     private String name;
-    private void print(){
+    private String surname;
 
-    }
-
-    public Author(String name) {
+    public Author(String name, String surname) {
         this.name = name;
+        this.surname = surname;
     }
 
     public String getName() {
@@ -16,10 +15,19 @@ public class Author {
         this.name = name;
     }
 
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
     @Override
     public String toString() {
         return "Author{" +
                 "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
                 '}';
     }
 }

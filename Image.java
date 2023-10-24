@@ -1,25 +1,22 @@
-public class Image {
-    private String imageName;
-    private void print(){
+public class Image implements Element{
+    private String url;
 
+    public Image(String url) {
+        this.url = url;
     }
 
-    public Image(String imageName) {
-        this.imageName = imageName;
+    public String getUrl() {
+        return url;
     }
 
-    public String getImageName() {
-        return imageName;
-    }
-
-    public void setImageName(String imageName) {
-        this.imageName = imageName;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     @Override
     public String toString() {
         return "Image{" +
-                "imageName='" + imageName + '\'' +
+                "url='" + url + '\'' +
                 '}';
     }
 }

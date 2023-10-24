@@ -1,4 +1,4 @@
-public class Book {
+public class Book extends Section{
     private String name;
     private void print(){
 
