@@ -42,6 +42,7 @@ public class Book{
     }
 
     public void print(){
+        System.out.print("Book: ");
         System.out.println(title);
         authorList.forEach(e -> e.print());
         elementsList.forEach(e -> e.print());
