@@ -1,13 +1,13 @@
 package ro.uvt.info.splab;
 
-<<<<<<< HEAD
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import ro.uvt.info.splab.models.Paragraph;
 import ro.uvt.info.splab.models.Section;
-=======
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
->>>>>>> 31d2bbb2f7a3266825d298c8f42808ac86f9438c
+
 
 @SpringBootApplication
 public class SplabApplication {
