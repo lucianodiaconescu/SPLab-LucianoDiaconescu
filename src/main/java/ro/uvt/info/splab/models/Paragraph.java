@@ -1,6 +1,8 @@
 package ro.uvt.info.splab.models;
 
-public class Paragraph implements Element, Strategy{
+import ro.uvt.info.splab.services.AlignStrategy;
+
+public class Paragraph implements Element, AlignStrategy {
     private String text;
 
     public Paragraph(String text) {
@@ -30,7 +32,7 @@ public class Paragraph implements Element, Strategy{
     }
 
     @Override
-    public String render(Paragraph paragraph, Context context) {
+    public String render(String text, int lineLength) {
         return null;
     }
 }

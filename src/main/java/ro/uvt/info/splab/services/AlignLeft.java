@@ -2,11 +2,18 @@ package ro.uvt.info.splab.services;
 
 import ro.uvt.info.splab.models.Context;
 import ro.uvt.info.splab.models.Paragraph;
-import ro.uvt.info.splab.models.Strategy;
 
-public class AlignLeft implements Strategy {
+public class AlignLeft implements AlignStrategy {
     @Override
-    public String render(Paragraph paragraph, Context context) {
-        return null;
+    public String render(String text, int lineLength) {
+        int length = text.length();
+        StringBuilder result = new StringBuilder();
+        int start = 0;
+        while (start < length) {
+            int end = Math.min(start + lineLength, length);
+            result.append(text, start, end).append('\n');
+            start = end;
+        }
+        return result.toString();
     }
 }
